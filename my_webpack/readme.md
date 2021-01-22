@@ -16,8 +16,17 @@ bundle.js文件结构: (fun(modules){处理模块加载})(indexfile: fun, jdfile
 
 
 02 创建打包命令jd-pack
+创建命令的目录
+生成package.json
+生成命令, npm link(把本地目录创建全局快捷方式)
+npx jd-pack 
 
-
+03 查找所有的依赖模块
+- 读取代码内容
+- 读取模块文件相对路径, 要与my.js相对应
+- 读取模块文件中子依赖包, 首先需要解析当前模块
+- 解析结果: 是否存在子依赖包dependcies, 解析的源码sourceCode
+- 代码解析: vue---->html css js   es6-->es5
 
 
 

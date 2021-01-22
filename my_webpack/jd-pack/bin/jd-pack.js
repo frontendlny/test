@@ -7,4 +7,4 @@ let config = require(path.resolve("webpack.config.js"));
 let Compiler = require("../lib/Compiler")
 let compiler = new Compiler(config);
 // 编译
-compiler.run() 
+compiler.run(); 
