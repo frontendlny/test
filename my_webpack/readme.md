@@ -14,7 +14,6 @@ bundle.js文件结构: (fun(modules){处理模块加载})(indexfile: fun, jdfile
 将require替换成webpack自定义加载函数__webpack_require__
 参数: {模块相对路径: 代码内容}
 
-
 02 创建打包命令jd-pack
 创建命令的目录
 生成package.json
@@ -28,13 +27,26 @@ npx jd-pack
 - 解析结果: 是否存在子依赖包dependcies, 解析的源码sourceCode
 - 代码解析: vue---->html css js   es6-->es5
 
+04 模块解析(cnpm i -S babylon @babel/traverse @babel/types @babel/generator)
+- 使用ast语法树解析  https://astexplorer.net/
+- const n = 1; --> const x = 1;
+- 将代码中的require--->__webpack_require__
+- 将require('./jd')--->require('./jd.js')
+- 收集dependencies 
 
+05 打包输出(cnpm install ejs -S)
+- 使用模板生成my.js, 传入的参数必须是动态
+- 模板express ejs <%=xxx%> https://ejs.bootcss.com/#install
+- 使用fs将生成的文件写入bundle.js, 使用index.html引入打开测试与之前webpack打包输出一致
+ 
+06 手写loader(cnpm i -S less less-loader style-loader css-loader)
+- less sass vue...
+- 作用: 转换, less--->css   vue---->js html css
+- 使用npx webpack打包less
+- 使用自定义的loader  less-loader  style-loader
+- 打包时必须使用自定义loader
 
-
-
-
-
-
-
-
-
+07 手写plugin(cnpm install tapable -S)
+- 代码加工: 压缩, 合并, 混淆
+- tapable--发布订阅处理plugin的事件流程
+- 需要一个固定的apply方法, 会在编译器中调用
