@@ -26,13 +26,15 @@ git add git.md
 git status
 git *html
 git status
+git commit -m 'changed app.js'
 
 
+1. 如何使用git忽略不想上传的文件
+2. 分支的使用
+3. 主线及分支的合并
+4. 操作远程仓库
 
+git remote
+git remote add origin https://github.com/frontendlny/test.git
 
-
-
-
-
-
-
+git push -u origin master
