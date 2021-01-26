@@ -13,10 +13,7 @@
 6. git pull      // 从远程仓库拉取数据
 7. git clone     // 从远程仓库拷贝数据
 
-
 git --version
-touch index.html
-touch app.js
 git init
 
 git config --global user.name 'frontendlny'
