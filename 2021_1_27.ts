@@ -72,7 +72,7 @@ interface SearchFun4<T> {
 var fun4: SearchFun4<string> = function <T>(src: T, str: T): boolean {
   return src == str;
 };
-fun4('abc', 'a');
+fun4('abc', 'a')
 
 
 //定义一个函数根据传入长度以及值来创建数组
