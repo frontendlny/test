@@ -1,0 +1,269 @@
+/* top logo start */
+
+.top, .nav, .nav_box, .banner, .news {
+  margin: 0 auto;
+}
+
+.top {
+  width: 1000px;
+  height: 100px;
+}
+
+.top .logo {
+  width: 257px;
+  height: 79px;
+  float: left;
+  padding-top: 21px;
+  padding-left: 21px;
+}
+
+.top .form {
+  width: 247px;
+  height: 61px;
+  float: right;
+  padding-top: 39px;
+}
+
+.top .form .txt {
+  width: 195px;
+  height: 26px;
+  float: left;
+  border: 1px solid #e5e5e5;
+  border-right: none;
+  /* color: #989898; */
+}
+
+.top .form .btn {
+  width: 30px;
+  height: 28px;
+  float: left;
+  border: 1px solid #e5e5e5;
+  border-left: none;
+  background: url('https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3671100154,1402625347&fm=26&gp=0.jpg') no-repeat center;
+  background-size: 100% 140%;
+}
+
+.top .form input {
+  background-color: #f1f1f1;
+}
+
+/* top logo end */
+
+/* nav start */
+
+.nav {
+  width: 100%;
+  height: 58px;
+  background-color: #2a2a2a;
+}
+
+.nav .nav_box {
+  width: 1000px;
+  height: 58px;
+  /* background-color: red; */
+}
+
+.nav .nav_box li {
+  float: left;
+  width: 119px;
+  height: 58px;
+  line-height: 58px;
+  font-size: 12px;
+  text-align: center;
+  border-right: 1px solid #4a4a4a;
+}
+
+.nav .nav_box li a {
+  color: #fcfcfc;
+}
+
+.nav .nav_box .last {
+  border: none;
+}
+
+.nav .nav_box .first {
+  margin-left: 27px;
+}
+
+.nav .nav_box li a:hover {
+  font-weight: bold;
+  color: red;
+}
+
+/* nav end */
+
+/* banner start */
+
+.banner {
+  width: 1000px;
+  height: 465px;
+}
+
+/* banner end */
+
+/* news start */
+
+.news {
+  width: 1000px;
+  height: 269px;
+}
+
+.news .news_left {
+  width: 500px;
+  height: 269px;
+  float: left;
+}
+
+.news .news_left h2 {
+  /* font-weight: bold; */
+  font-size: 18px;
+  color: #3d464f;
+  padding-top: 22px;
+  padding-left: 22px;
+  padding-bottom: 30px;
+}
+
+.news .news_left ul {
+  padding-left: 22px;
+}
+
+.news .news_left li {
+  color: #505050;
+  font-size: 12px;
+  width: 450px;
+  height: 12px;
+  line-height: 12px;
+  margin-bottom: 13px;
+  /* background: red url('images/listbg.jpg') no-repeat left center; */
+  padding-left: 9px;
+}
+
+.news .news_left li a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 299px;
+}
+
+.news .news_left a {
+  float: left;
+  color: #535353;
+}
+
+.news .news_left li span {
+  float: right;
+  color: #8a8a8a;
+}
+
+/* 新闻介绍 */
+
+.news .news_center {
+  width: 240px;
+  height: 240px;
+  background: #f1f1f1;
+  float: left;
+}
+
+.news .news_center h2 {
+  font-size: 18px;
+  padding-top: 36px;
+  padding-left: 20px;
+  color: #40444f;
+}
+
+.news .news_center .txt {
+  padding-left: 25px;
+  line-height: 26px;
+  font-size: 12px;
+  color: #585858;
+  margin-top: 32px;
+}
+
+.news .news_center .txt2 {
+  line-height: 24px;
+  padding-left: 25px;
+  font-size: 12px;
+  color: #919191;
+  margin-top: 20px;
+}
+
+/* 人才招聘 */
+
+.news .news_right {
+  width: 221px;
+  height: 204px;
+  background: #fbfbfb url('https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2985372126,165587932&fm=26&gp=0.jpg') no-repeat 143px 136px;
+  float: left;
+  padding: 36px 13px 0 25px;
+  border-right: 1px solid #fff;
+}
+
+.news .news_right h2 {
+  font-size: 18px;
+  color: #1d1d1d;
+}
+
+.news .news_right .txt {
+  font-size: 12px;
+  color: #5c5c5c;
+  line-height: 24px;
+  margin-top: 21px;
+}
+
+.news .news_right img {
+  margin-top: 50px;
+}
+
+/* news end */
+
+/* project start */
+
+.project {
+  width: 1000px;
+  height: 276px; 
+  margin: 0 auto;
+}
+.project h2{
+  padding-left: 20px;
+  font-size: 18px;
+  color: #3e4750;
+}
+.project dt{
+  padding-top: 20px; 
+}
+.project dd{
+  margin-top: 12px;
+  width: 210px;
+  line-height: 24px;
+  font-size: 12px;
+  color: #4c4c4c;
+}
+
+.project dl{
+  float: left;
+  padding: 0 20px;
+}
+/* project end */
+
+
+/* footer start */
+/* footer end */
+.footer{
+  width: 100%;
+  height: 250px;
+  background-color: #ccc;
+}
+.footer_box{
+  width: 1000px;
+  height: 250px;
+  background-color: #f90;
+  margin: 0 auto;
+}
+
+/* firend start */
+.firend{
+  width: 100%;
+  height: 82px;
+  background-color: #fff;
+}
+/* firend end */
