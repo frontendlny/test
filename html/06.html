@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>定位锚点透明</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .op{
+      width: 200px;
+      height: 10px;
+      background-color: red;
+      opacity: .1;
+      filter:alpha(opacity=10);
+    }
+
+
+    .box {
+      width: 220px;
+      height: 220px;
+      border: 1px solid red;
+      margin: 100px auto;
+      position: relative;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .btnbox {
+      width: 220px;
+      height: 30px;
+      background-color: red;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
+    a {
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-color: #000;
+      color: #fff;
+      font-weight: bold;
+      float: left;
+      text-align: center;
+      line-height: 30px;
+      margin-right: 1px;
+    }
+
+    .imgbox {
+      width: 220px;
+      height: 220px;
+      overflow: hidden;
+    }
+
+
+
+    .nav {
+      width: 464px;
+      height: 34px;
+      margin: 100px auto;
+    }
+
+    .nav li {
+      list-style: none;
+      float: left;
+    }
+
+    .nav a {
+      text-decoration: none;
+      display: block;
+      width: 115px;
+      height: 34px;
+      background-color: #eee;
+      margin-right: 1px;
+      text-align: center;
+      line-height: 34px;
+      color: #2c353e;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .nav2 {
+      position: absolute;
+      width: 115px;
+      display: none;
+    }
+
+    .nav a:hover {
+      background-color: #333;
+      color: #f4fffa;
+      text-decoration: underline;
+    }
+
+    .nav li:hover .nav2 {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="op"></div>
+
+  <div class="box">
+    <div class="imgbox">
+      <img id="img1"
+        src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3791918726,2864900975&fm=26&gp=0.jpg" alt="">
+      <img id="img2" src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=121352583,3553479540&fm=26&gp=0.jpg"
+        alt="">
+      <img id="img3" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2033921778,648007645&fm=26&gp=0.jpg"
+        alt="">
+      <img id="img4" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3621987426,796514073&fm=26&gp=0.jpg"
+        alt="">
+    </div>
+    <div class="btnbox">
+      <a href="#img1">1</a>
+      <a href="#img2">2</a>
+      <a href="#img3">3</a>
+      <a href="#img4">4</a>
+    </div>
+  </div>
+
+  <!-- <ul class="nav">
+    <li>
+      <a href="#">首页</a>
+      <ul class="nav2">
+        <li>
+          <a href="#">首页</a>
+        </li>
+        <li>
+          <a href="#">首页</a>
+        </li>
+        <li>
+          <a href="#">首页</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">产品中心</a>
+      <ul class="nav2">
+        <li>
+          <a href="#">产品中心</a>
+        </li>
+        <li>
+          <a href="#">产品中心</a>
+        </li>
+
+        <li>
+          <a href="#">产品中心</a>
+        </li>
+        <li>
+          <a href="#">产品中心</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">客户服务</a>
+       <ul class="nav2">
+        <li>
+          <a href="#">客户服务</a>
+        </li>
+        <li>
+          <a href="#">客户服务</a>
+        </li>
+
+        <li>
+          <a href="#">客户服务</a>
+        </li>
+        <li>
+          <a href="#">客户服务</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">联系我们</a>
+       <ul class="nav2">
+        <li>
+          <a href="#">联系我们</a>
+        </li>
+        <li>
+          <a href="#">联系我们</a>
+        </li>
+
+        <li>
+          <a href="#">联系我们</a>
+        </li> 
+      </ul>
+    </li>
+  </ul> -->
+</body>
+
+</html>

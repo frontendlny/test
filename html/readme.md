@@ -102,15 +102,29 @@ href: 导入外部的css文件 (路径)
 【重置CSS样式】
 @charset 'utf-8'; 设置字符编码格式 
 
+## 第5节 元素类型
+【标签类型总结-分类】
+  根据css显示分类, 可以把HTML标签分为三大类
+    1. 块标签  div  p  h1-h6  hr ul ol dl dd dt li form
+    2. 行内标签  a  b  strong  i  em  span  sub  sup  font  u  label  br
+    3. 行内块标签  img  textarea  input
 
+【标签类型之间的区别】
+  1. 块标签: 独自占一行、可以进行高度、宽度的数值的设定
+  2. 行内标签: 在一行内显示, 不可以进行宽度高度的设定
+  3. 行内块标签: 在一行内显示, 能设置宽高
 
+【标签与标签之间的相互嵌套规则】
+  1. 块标签可以套行内标签, 行标签不可以套块标签(a标签可以套所有标签)
+  2. p标签不要套块属性的标签, 可以套a span 文本...
+  3. 标签相互嵌套的时候注意代码的缩进
 
+display: list-item;
+list-style-position: inside;
 
+## 第6节 定位锚点透明
+opacity: .7; 
+filter: alpha(opacity=70);
 
-
-
-
-
-
-
-
+## 第7节 PC端项目宽高自适应和浏览器兼容
+【PC端】
