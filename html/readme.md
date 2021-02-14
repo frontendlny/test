@@ -127,4 +127,74 @@ opacity: .7;
 filter: alpha(opacity=70);
 
 ## 第7节 PC端项目宽高自适应和浏览器兼容
-【PC端】
+【宽高自适应兼容】
+  第一种兼容ie6自适应高度方法:
+    min-height: 300px; _height: 300px;
+  第二种兼容ie6自适应高度方法:
+    min-height: 300px; height: auto!important; height: 300px; 
+
+【清除浮动的方式】 解决高度坍塌问题
+  第一种: overflow: hidden;
+  第二种: 给空白的标签添加 clear: both;
+
+  万能清除浮动方法
+    .clearfix:after{
+      content: '';
+      clear: both;
+      display: block;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden;
+    }
+    .clearfix{zoom: 1;} 兼容低版本浏览器
+
+   visibility: hidden;  隐藏元素但是会占用位置
+
+  补充: 伪对象选择符
+    ::after
+    ::before
+    ::first-letter  第一个字
+    ::first-line 第一行
+
+## 第8节 表格表单的高级应用和浏览器兼容
+【表格的高级应用】table 
+  border-collapse: collapse; 相邻的边框进行合并    separate 默认值
+
+  border-spacing: 20px;  单元格之间的间距
+  
+  empty-cells: hide; 当单元格里面没有内容的时候隐藏    show 默认值
+  
+  table-layout: fixed; 固定宽高   auto 自动 默认值
+
+  caption 表格的大标题
+
+【表格】
+  数据行和数据列分组(了解)
+  <thead></head>
+  <tbody></tbody>
+  <tfoot></tfoot>
+
+  数据列分组
+  <colgroup span="值"></colgroup>
+  在table上加 rules="all/rows/cols/groups"
+
+  表单字段集: 给表单左分组
+    <fieldset></fieldset>
+  
+  字段级标题
+    <legent></legent>
+
+  提示信息标签
+    <label for="你起的id名字"></label>
+
+  上传文件框
+    <input type="file" multiple="multiple">
+ 
+
+
+
+
+
+
+
+

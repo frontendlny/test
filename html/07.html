@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PC端项目宽高自适应和浏览器兼容</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    .banner {
+      width: 100%;
+      height: 84.4%; 
+    }
+
+    .banner img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .nav {
+      height: 10.6%; 
+    }
+
+    .nav p { 
+      text-align: center;
+      position: relative;
+      top: 35%;
+    }
+
+    .nav p a {
+      text-decoration: none;
+      color: #333;
+      padding: 0 1%;
+    }
+
+    .bottom {
+      height: 5%; 
+    }
+
+    .bottom p {
+      text-align: center;
+      position: relative;
+      top: 25%;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="banner">
+    <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2033921778,648007645&fm=26&gp=0.jpg" alt="">
+  </div>
+  <div class="nav">
+    <p>
+      <a href="#">Lorem, ipsum.</a>
+      <a href="#">Praesentium, officia.</a>
+      <a href="#">Ab, odit?</a>
+      <a href="#">Exercitationem, labore?</a>
+      <a href="#">Autem, accusamus.</a>
+      <a href="#">Numquam, cum.</a>
+    </p>
+  </div>
+  <div class="bottom">
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+  </div>
+</body>
+
+</html>

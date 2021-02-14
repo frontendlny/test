@@ -42,6 +42,19 @@ form input {
   outline: none;
 }
 
-img{
+img {
   display: block;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.clearfix {
+  zoom: 1;
 }
